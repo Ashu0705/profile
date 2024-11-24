@@ -1,21 +1,17 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Routes, Navigate, useLocation } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-dom';
 import ProfileForm from './components/ProfileForm';
 import ProfileDisplay from './components/ProfileDisplay';
 import { ProfileProvider } from './context/ProfileContext';
-import Navbar from './components/Navbar';
 import NotFound from './components/NotFound';
 
 
 const App: React.FC = () => {
-  const location = useLocation();
-  const showNavbar = location.pathname !=='/404'
   return (
     // <Router>
     <ProfileProvider>
-      {/* {showNavbar && <Navbar />} */}
       <Routes>
-      <Route path='/' element={<Navigate to="/profile-form" />} /> 
+      <Route path="/" element={<Navigate to="/profile-form" />} />
       <Route path='/profile-form/:id' element={<ProfileForm />} />
       <Route path='/profile-form' element={<ProfileForm />} />
       <Route path='/profile/:id' element={<ProfileDisplay />} />

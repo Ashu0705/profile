@@ -48,12 +48,21 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However, we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-## Learn More
+## Clone the Repository
+To get started with the project, clone this repository to your local machine:
+```bash
+git clone https://github.com/Ashu0705/profile.git
+```
+After cloning, navigate to the project directory:
+```bash
+cd profile
+```
+## Install Dependencies
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
+Once inside the project directory, install the necessary dependencies for both the React app and the mock API server (JSON Server):
+```bash
+npm install
+```
 ## Customizing the Project
 
 To run the development environment with both the React app and the mock JSON server, use:
